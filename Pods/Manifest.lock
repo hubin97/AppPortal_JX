@@ -1,0 +1,20 @@
+PODS:
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+  - Reachability (3.2)
+  - SVProgressHUD (2.1.2)
+
+DEPENDENCIES:
+  - MagicalRecord (~> 2.3.2)
+  - Reachability (~> 3.2)
+  - SVProgressHUD (~> 2.1.2)
+
+SPEC CHECKSUMS:
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+
+PODFILE CHECKSUM: dffe9d286fc28e24ecbb61d5f712d043b608b75d
+
+COCOAPODS: 1.1.1
