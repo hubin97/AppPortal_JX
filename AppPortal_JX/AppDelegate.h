@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "MTBaseAppDelegate.h"
+#import "APWelcomeViewController.h"
+#import "MTTargetMaker.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : MTBaseAppDelegate//UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+//@property (strong, nonatomic) UIWindow *window;
 
 
 @end

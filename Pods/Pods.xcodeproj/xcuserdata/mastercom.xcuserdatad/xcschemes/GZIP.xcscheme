@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E8B0E0852346678A324488B6DE892D82'
-               BlueprintName = 'Pods-AppPortal_JX'
+               BlueprintIdentifier = '9A07BB0F2F4F1B91893B1C6FBF5370AD'
+               BlueprintName = 'GZIP'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-AppPortal_JX.a'>
+               BuildableName = 'libGZIP.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

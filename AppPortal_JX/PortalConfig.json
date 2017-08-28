@@ -1,0 +1,228 @@
+{
+    "monitor_radius": null,
+    "userid": "0001",
+    "fullName": "admin",
+    "success": 1,
+    "USER_INFO": {
+        "登录名": "15088132298",
+        "手机号码": "15088132298"
+    },
+    "monitor_lng": null,
+    "monitor_background": null,
+    "monitor_funName": null,
+    "rtstate": 0,
+    "region": null,
+    "funcIDs": "站址选取,设备安装,开通验收,其他任务",
+    "monitor_lat": null,
+    "isMtn": "0",
+    "areaType": "0",
+    "portalConfig": {
+        "uiframes": {
+            "type": "Navigator",
+            "param": {
+                "barItemsInfo": [
+                                 {
+                                 "title": "首页",
+                                 "icon_normal": "btn_home_normal",
+                                 "icon_selected": "btn_home_normal"
+                                 },
+                                 {
+                                 "title": "任务中心",
+                                 "icon_normal": "btn_column_normal",
+                                 "icon_selected": "btn_column_normal"
+                                 },
+                                 {
+                                 "title": "通讯录",
+                                 "icon_normal": "btn_online_normal",
+                                 "icon_selected": "btn_online_normal"
+                                 },
+                                 {
+                                 "title": "我",
+                                 "icon_normal": "btn_mine_normal",
+                                 "icon_selected": "btn_mine_normal"
+                                 }
+                                 ],
+                "views": [
+                          {
+                          "type": "Container",
+                          "param": {
+                          "leftItem": {
+                          "icon": "ic_button_menu",
+                          "action": "openColseMenu:"
+                          },
+                          "fadeNaviBar": "1",
+                          "extend": "1",
+                          "dragEnableControl": "1",
+                          "views": []
+                          }
+                          },
+                          {
+                          "type": "Container",
+                          "param": {
+                          "leftItem": {
+                          "icon": "ic_button_menu",
+                          "action": "openColseMenu:"
+                          },
+                          "fadeNaviBar": "1",
+                          "extend": "1",
+                          "dragEnableControl": "1",
+                          "views": [
+                                    {
+                                    "type": "ADView",
+                                    "height": "-0.417",
+                                    "param": {
+                                    "aditem": [{
+                                    "images": "galaxy.png"
+                                    },
+                                    {
+                                    "images": "bg_main_title_1.png"
+                                    },
+                                    {
+                                    "images": "bg_main_title_3.png"
+                                    }],
+                                    "fullFill": "1"
+                                    }
+                                    },
+                                    {
+                                    "type": "APScollKeynoteView",
+                                    "param": {
+                                    "iconType": "0",
+                                    "editable": "1"
+                                    },
+                                    "height": "-1",
+                                    "item": [
+                                             {
+                                             "icon": "bt_task_site_testing",
+                                             "title": "站址选取",
+                                             "height": "1",
+                                             "target": {
+                                                },
+                                             "funcname": "站址选取"
+                                             },
+                                             {
+                                             "icon": "bt_task_site_facility",
+                                             "title": "设备安装",
+                                             "height": "2",
+                                             "target": {
+                                             "type": "XADeviceInstallController",
+                                             "param": {}
+                                             },
+                                             "funcname": "设备安装"
+                                             },
+                                             {
+                                             "icon": "bt_task_site_acceptance",
+                                             "title": "开通验收",
+                                             "height": "1",
+                                             "target": {
+                                             },
+                                             "funcname": "开通验收"
+                                             },
+                                             {
+                                             "icon": "bt_task_site_other",
+                                             "title": "其他任务",
+                                             "height": "1",
+                                             "target": {
+                                             },
+                                             "funcname": "其他任务"
+                                             }
+                                             ]
+                                    },
+                                    {
+                                    "type": "FunctionFlow",
+                                    "height": "-1",
+                                    "param": {
+                                    "iconType": "0",
+                                    "minCellHeight": "70",
+                                    "FixedColumnNum": "2",
+                                    "autoFill": "1"
+                                    },
+                                    "item": [
+                                             {
+                                             "icon": "appicons/icon_home_kpi.png",
+                                             "title": "关键指标",
+                                             "subtitle": "关键指标",
+                                             "alignType": "5",
+                                             "height": "1",
+                                             "bgCellColor": "#FFA500",
+                                             "textColor": "#FFFFFF",
+                                             "target": {
+                                             "type": "MTCustomQueryViewController",
+                                             "param": {
+                                             "url": "/attkpiquery/GetFunctions.aspx?type=GJZB",
+                                             "title": "关键指标"
+                                             }
+                                             },
+                                             "funcname": "站址选取"
+                                             }
+                                             ]
+                                    }
+                                    ]
+                          }
+                          },
+                          {
+                          "type": "Container",
+                          "param": {
+                          "leftItem": {
+                          "icon": "ic_button_menu",
+                          "action": "openColseMenu:"
+                          },
+                          "views": {
+                          "type": "FunctionGrid",
+                          "param": {
+                          "editable": "0",
+                          "iconType": "2",
+                          "columnNum": "4"
+                          },
+                          "item": [
+                                   {
+                                   "icon": "bt_task_site_other",
+                                   "title": "正在开发中...",
+                                   "bgCellColor": "#ffffff",
+                                   "target": {
+                                   },
+                                   "funcname": "站址选取"
+                                   }
+                                   ]
+                          }
+                          }
+                          },
+                          {
+                          "type": "Container",
+                          "param": {
+                          "leftItem": {
+                          "icon": "ic_button_menu",
+                          "action": "openColseMenu:"
+                          },
+                          "fadeNaviBar": "1",
+                          "extend": "1",
+                          "dragEnableControl": "1",
+                          "views": []
+                          }
+                          }
+                          ]
+            }
+        },
+        "appfunctions": {
+            "function": [
+                         {"funcname": "站址选取"},
+                         {"funcname": "设备安装"},
+                         {"funcname": "开通验收"},
+                         {"funcname": "其他任务"}
+                         ]
+        },
+        "applications": {
+            "application": [
+            
+                            ]
+        },
+        "mode": "customized"
+    },
+    "hasSendSms": "1",
+    "monitor_lasttime": null,
+    "monitor_title": null,
+    "result": "",
+    "monitor_des": null,
+    "monitor_icon": null,
+    "msg": "",
+    "userId": "2022"
+}

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>GZIP.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MagicalRecord.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,17 +37,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4EE3A848FC6D08C1B3F346E36F47B0DE</key>
+		<key>4A0FC385312BA2076BDDFCDA89B024D1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>58D61507A6E32A8C3CF6015AE30FE4D4</key>
+		<key>9A07BB0F2F4F1B91893B1C6FBF5370AD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EDFCF4947FE99389B74406714AF2A683</key>
+		<key>B9C57D4ABAF81630A19C2CDDD4236179</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E8B0E0852346678A324488B6DE892D82</key>
 		<dict>
 			<key>primary</key>
 			<true/>

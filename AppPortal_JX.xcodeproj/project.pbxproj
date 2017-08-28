@@ -51,6 +51,7 @@
 		53B80CBD1F50265A00A52620 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B80CA91F50265A00A52620 /* UIRefreshControl+AFNetworking.m */; };
 		53B80CBE1F50265A00A52620 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B80CAB1F50265A00A52620 /* UIWebView+AFNetworking.m */; };
 		53B80CC01F5026B200A52620 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B80CBF1F5026B200A52620 /* libc++.tbd */; };
+		53B80CC21F53A1B200A52620 /* PortalConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 53B80CC11F53A1B200A52620 /* PortalConfig.json */; };
 		5580041438E004A9D88AFBA8 /* libPods-AppPortal_JX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71CE00E9E5D6B7B1313C29D5 /* libPods-AppPortal_JX.a */; };
 /* End PBXBuildFile section */
 
@@ -135,6 +136,7 @@
 		53B80CAA1F50265A00A52620 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		53B80CAB1F50265A00A52620 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		53B80CBF1F5026B200A52620 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		53B80CC11F53A1B200A52620 /* PortalConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PortalConfig.json; sourceTree = "<group>"; };
 		53D6549ED7E87F1E6F87B6B0 /* Pods-AppPortal_JX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppPortal_JX.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppPortal_JX/Pods-AppPortal_JX.release.xcconfig"; sourceTree = "<group>"; };
 		71CE00E9E5D6B7B1313C29D5 /* libPods-AppPortal_JX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppPortal_JX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F871CE45EC453D4C9DBA1178 /* Pods-AppPortal_JX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppPortal_JX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppPortal_JX/Pods-AppPortal_JX.debug.xcconfig"; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				53B80C421F50216300A52620 /* Main.storyboard */,
 				53B80C451F50216300A52620 /* Assets.xcassets */,
 				53B80C471F50216300A52620 /* LaunchScreen.storyboard */,
+				53B80CC11F53A1B200A52620 /* PortalConfig.json */,
 				53B80C4A1F50216300A52620 /* Info.plist */,
 				53B80C391F50216300A52620 /* Supporting Files */,
 			);
@@ -339,6 +342,7 @@
 				53B80C341F50216300A52620 /* Resources */,
 				41038A1564439241A1D95924 /* [CP] Embed Pods Frameworks */,
 				112CF56AE7F200B2EDE028FC /* [CP] Copy Pods Resources */,
+				53B80CC31F53A30400A52620 /* copy AppPortal Files */,
 			);
 			buildRules = (
 			);
@@ -393,6 +397,7 @@
 				53B80C751F50260500A52620 /* LICENSE in Resources */,
 				53B80C441F50216300A52620 /* Main.storyboard in Resources */,
 				53B80CB51F50265A00A52620 /* LICENSE in Resources */,
+				53B80CC21F53A1B200A52620 /* PortalConfig.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +433,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppPortal_JX/Pods-AppPortal_JX-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		53B80CC31F53A30400A52620 /* copy AppPortal Files */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "copy AppPortal Files";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/../MTAppPortal/MTAppPortal/Resource/copy-build.sh $SRCROOT/../MTAppPortal/MTAppPortal/Resource\nUICommondir=${SRCROOT}/../MTUICommon\n$UICommondir/UICommonBundle/copyres-script.sh $UICommondir/UICommon/PinYinSupport/document";
 		};
 		7B4A556B6D19AF9B5223C0D4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -618,7 +637,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.mastercom.AppPortal-JX";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/../MTAppPortal/MTAppPortal ${SRCROOT}/../MTUICommon";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/../MTAppPortal/MTAppPortal/** ${SRCROOT}/../MTUICommon/**";
 			};
 			name = Debug;
 		};
@@ -640,7 +659,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.mastercom.AppPortal-JX";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/../MTAppPortal/MTAppPortal ${SRCROOT}/../MTUICommon";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/../MTAppPortal/MTAppPortal/** ${SRCROOT}/../MTUICommon/**";
 			};
 			name = Release;
 		};

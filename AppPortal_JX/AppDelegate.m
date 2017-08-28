@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <MagicalRecord/MagicalRecord.h>
+#import "MTUtils.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,38 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window setBackgroundColor:[UIColor whiteColor]];
+    
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"UICommonBundle" withExtension:@"bundle"];
+    if(url){
+        [MTGlobalInfo sharedInstance].commBundle = [NSBundle bundleWithURL:url];
+    }
+    
+    //[self setupBMap];
+    
+    [self setupAppearance];
+    
+    // 对Magical Record的初始化
+    [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"AppPortal"];
+    
+    
+    [UINavigationBar appearanceWhenContainedIn:[UINavigationController class], nil].backgroundColor = [UIColor colorWithHexString:@"0x0085d0"];
+    if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_7_0) {
+        [UINavigationBar appearanceWhenContainedIn:[UINavigationController class], nil].barTintColor = [UIColor colorWithHexString:@"0x0085d0"];
+    }
+    
+    [MTBaseViewController didUseNewNaviBgColor:YES];
+    NSString* className= @"APWelcomeViewController";
+    
+    self.rootViewController = [[MTTargetMaker sharedInstance] fromClassName:className];
+    self.navigationController = (MTNavigationController*)[[UINavigationController alloc] initWithRootViewController:self.rootViewController];
+    
+    self.window.rootViewController = self.navigationController;
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
