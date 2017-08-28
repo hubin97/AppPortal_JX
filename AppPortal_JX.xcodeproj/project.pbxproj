@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53A5BD1A1F53A625001D7D26 /* MenuSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53A5BD191F53A625001D7D26 /* MenuSettings.plist */; };
+		53A5BD1D1F53A78E001D7D26 /* APLoginViewController_AppPortalDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5BD1C1F53A78E001D7D26 /* APLoginViewController_AppPortalDemo.m */; };
 		53B80C3B1F50216300A52620 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B80C3A1F50216300A52620 /* main.m */; };
 		53B80C3E1F50216300A52620 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B80C3D1F50216300A52620 /* AppDelegate.m */; };
 		53B80C411F50216300A52620 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B80C401F50216300A52620 /* ViewController.m */; };
@@ -56,6 +58,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53A5BD191F53A625001D7D26 /* MenuSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MenuSettings.plist; sourceTree = "<group>"; };
+		53A5BD1B1F53A78E001D7D26 /* APLoginViewController_AppPortalDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLoginViewController_AppPortalDemo.h; sourceTree = "<group>"; };
+		53A5BD1C1F53A78E001D7D26 /* APLoginViewController_AppPortalDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLoginViewController_AppPortalDemo.m; sourceTree = "<group>"; };
 		53B80C361F50216300A52620 /* AppPortal_JX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppPortal_JX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B80C3A1F50216300A52620 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		53B80C3C1F50216300A52620 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -192,10 +197,13 @@
 				53B80C3C1F50216300A52620 /* AppDelegate.h */,
 				53B80C3D1F50216300A52620 /* AppDelegate.m */,
 				53B80C3F1F50216300A52620 /* ViewController.h */,
+				53A5BD1B1F53A78E001D7D26 /* APLoginViewController_AppPortalDemo.h */,
+				53A5BD1C1F53A78E001D7D26 /* APLoginViewController_AppPortalDemo.m */,
 				53B80C401F50216300A52620 /* ViewController.m */,
 				53B80C421F50216300A52620 /* Main.storyboard */,
 				53B80C451F50216300A52620 /* Assets.xcassets */,
 				53B80C471F50216300A52620 /* LaunchScreen.storyboard */,
+				53A5BD191F53A625001D7D26 /* MenuSettings.plist */,
 				53B80CC11F53A1B200A52620 /* PortalConfig.json */,
 				53B80C4A1F50216300A52620 /* Info.plist */,
 				53B80C391F50216300A52620 /* Supporting Files */,
@@ -397,6 +405,7 @@
 				53B80C751F50260500A52620 /* LICENSE in Resources */,
 				53B80C441F50216300A52620 /* Main.storyboard in Resources */,
 				53B80CB51F50265A00A52620 /* LICENSE in Resources */,
+				53A5BD1A1F53A625001D7D26 /* MenuSettings.plist in Resources */,
 				53B80CC21F53A1B200A52620 /* PortalConfig.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +497,7 @@
 				53B80C411F50216300A52620 /* ViewController.m in Sources */,
 				53B80CB01F50265A00A52620 /* AFSecurityPolicy.m in Sources */,
 				53B80C3E1F50216300A52620 /* AppDelegate.m in Sources */,
+				53A5BD1D1F53A78E001D7D26 /* APLoginViewController_AppPortalDemo.m in Sources */,
 				53B80C7A1F50260500A52620 /* SDWebImageDecoder.m in Sources */,
 				53B80C811F50260500A52620 /* UIImage+MultiFormat.m in Sources */,
 				53B80CAD1F50265A00A52620 /* AFHTTPRequestOperationManager.m in Sources */,
